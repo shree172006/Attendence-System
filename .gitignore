@@ -1,0 +1,28 @@
+# Environment variables
+.env
+.env.*
+.env.local
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+build/
+
+# WhatsApp Web session and cache
+.wwebjs_auth/
+.wwebjs_cache/
+**/.wwebjs_auth/
+**/.wwebjs_cache/
+
+# Local state / logs
+**/attendance-data.json
+*.log
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

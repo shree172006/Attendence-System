@@ -1,0 +1,24 @@
+{
+    "name": "attendance-backend",
+    "version": "1.0.0",
+    "description": "WhatsApp backend for Attendance System",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node --env-file=.env index.js",
+        "dev": "node --watch --env-file=.env index.js",
+        "test-msg": "node test/test-message.js",
+        "importData": "node --env-file=.env import-data.js",
+        "importGuardians": "node --env-file=.env import-guardians.js"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.117.2",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "qrcode-terminal": "^0.12.0",
+        "whatsapp-web.js": "^1.23.0"
+    },
+    "allowScripts": {
+        "puppeteer@24.38.0": true
+    }
+}

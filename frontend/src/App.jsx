@@ -1,0 +1,3 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import TeacherDashboard from './views/teacher/Dashboard'; import ClassView from './views/teacher/ClassView'; import Login from './views/auth/Login'; import Students from './views/teacher/Students';
+export default function App(){return <BrowserRouter><div className="app-container"><Routes><Route path="/" element={<Navigate to="/teacher" replace/>}/><Route path="/login" element={<Login/>}/><Route path="/teacher" element={<TeacherDashboard/>}/><Route path="/teacher/students" element={<Students/>}/><Route path="/teacher/class/:id" element={<ClassView/>}/><Route path="*" element={<Navigate to="/teacher" replace/>}/></Routes></div></BrowserRouter>}
